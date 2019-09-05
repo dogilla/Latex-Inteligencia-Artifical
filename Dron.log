@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.18)  4 SEP 2019 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.18)  4 SEP 2019 23:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,18 +475,18 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 ) (./Dron.aux)
 \openout1 = `Dron.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -502,58 +502,58 @@ LaTeX Font Info:    ... okay on input line 29.
 \makeMPintoPDFobject=\count111
 \everyMPtoPDFconversion=\toks26
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 31.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 31.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (107.94583pt too wide) in paragraph at lines 41--41
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (107.94583pt too wide) in paragraph at lines 56--56
 \OML/cmm/m/it/8 http \OT1/cmr/m/n/8 : \OML/cmm/m/it/8 ==esie:icat:unam:mx=moodl
 e=pluginfile:php=\OT1/cmr/m/n/8 1684\OML/cmm/m/it/8 =mod[]esource=content=\OT1/
 cmr/m/n/8 1\OML/cmm/m/it/8 =Sistemas\OT1/cmr/m/n/8 20\OML/cmm/m/it/8 Basados\OT
 1/cmr/m/n/8 20\OML/cmm/m/it/8 en\OT1/cmr/m/n/8 20\OML/cmm/m/it/8 Reglas:pdf$| 
  []
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (45.65054pt too wide) in paragraph at lines 84--89
- [][] 
- []
-
 [2]
-Overfull \hbox (66.78401pt too wide) in paragraph at lines 97--102
+Overfull \hbox (45.65054pt too wide) in paragraph at lines 99--104
+ [][] 
+ []
+
+[3]
+Overfull \hbox (66.78401pt too wide) in paragraph at lines 112--117
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
-[3] (./Dron.aux) ) 
+[4] (./Dron.aux) ) 
 Here is how much of TeX's memory you used:
- 2805 strings out of 493827
- 32290 string characters out of 6153866
- 98191 words of memory out of 5000000
+ 2804 strings out of 493827
+ 32277 string characters out of 6153866
+ 97087 words of memory out of 5000000
  6251 multiletter control sequences out of 15000+600000
- 11666 words of font info for 46 fonts, out of 8000000 for 9000
+ 11497 words of font info for 45 fonts, out of 8000000 for 9000
  648 hyphenation exceptions out of 8191
- 41i,18n,35p,512b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,18n,35p,586b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
@@ -565,12 +565,11 @@ dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mtt12.pfb>
-Output written on Dron.pdf (3 pages, 139235 bytes).
+s/cm/cmsy10.pfb>
+Output written on Dron.pdf (4 pages, 138777 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,20 +1,27 @@
-\documentclass{article}
+\documentclass[10pt, a4paper]{article}
+\usepackage[spanish, es-tabla]{}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float} 
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{booktabs}
 
-\title{Dron 2020-1}
+\title{\begin{center}
+ {\LARGE \scshape Universidad Nacional Aut\'onoma de M\'exico \\ Facultad de Ciencias }
+  \rule{1\textwidth}{2.0pt}\\
+\end{center}}
 \author{
-  Guzman, Mosco\\
-  Mario, Alexis\\
+  Guzmán Mosco, Mario Alexis\\
   \texttt{first1.last1@xxxxx.com}
   \and  
-  LastName1, FirstName1\\
+  Mart\'inez Mendoza, Miguel \'Angel\\
   \texttt{first1.last1@xxxxx.com}
   \and
-  LastName2, FirstName2\\
+  Torres Bucio, Miriam\\
   \texttt{first2.last2@xxxxx.com}
   \and
-  LastName2, FirstName2\\
+  LastName2, Carlos\\
   \texttt{first2.last2@xxxxx.com}
 }
 \date{4 de Septiembre 2019}
@@ -23,16 +30,95 @@
 
 \maketitle
 
-\section{Persepciones}
-\subsection{Sistema basado en reglas}
-Para el manejo del agente Dron se ha usado un sistema basado en reglas, el cual, permite manipular la información de forma util para los fines del agente, en palabras del profesor, "los sistemas basados en reglas son usados como una forma de almacenar y manipular el conocimiento einterpretarlo de una manera útil".
+\section{Introduction}
+
+
+poner introducci\'on mamalona
+
+
+\section{Definición del problema}
+\subsubsection{Sistema basado en reglas}
+Para el manejo del agente Dron se ha usado un sistema basado en reglas, el cual, permite manipular la información de forma util para los fines del agente, en palabras del profesor, "los sistemas basados en reglas son usados como una forma de almacenar y manipular el conocimiento einterpretarlo de una manera útil".\footnote{$ Sacado de: $ \\ $http://esie.icat.unam.mx/moodle/pluginfile.php/1684/mod_resource/content/1/Sistemas20Basados20en20Reglas.pdf$ }
+
 En este caso el conocimiento que tenemos se trata del entorno y fue conseguido apriori  debido a que fue programado y contruido con el objetivo especifico de ser el espacio de movimiento del dron. Dado este contexto, se puede tener las siguientes hipotesis acerca del entorno y el movimiento del Dron:
 
-- El entorno es finito dado los límites establecido por el creador del entorno
-- El espacio es lo suficientemente amplio como para que el dron 
+\begin{enumerate}
+\item El entorno es finito dado los límites establecido por el creador del entorno.
+\item El espacio es lo suficientemente amplio como para que el dron.
+\end{enumerate}
 
-Si topa obstaculo $\Rightarrow$ moverse
+El sistema basado en reglas funciona en términos computacionales por medio de las expresiones "if", haciendo uso de su sémantica usual en cualquier lenguaje de programación.
 
+Si la condicion se cumple $\Rightarrow$ realizar acción
+
+
+
+\section{Solución del problema}
+\begin{enumerate}
+\item[$\clubsuit$]Que tipo de agente se propone utilizar?\\
+El agente "Dron" implementado es este proyecto funciona en la práctica como un agente reactivo simple, es decir, cuenta con las siguientes caracteristicas: 
+	\begin{enumerate}
+	\item El ambiente, los sensores y los actuadores funcionan de manera conjunta sin presindir uno del otro
+	\item Los sensores dan cuenta de como es el mundo y premiten tener un panorama del entorno 
+	\item Los actuadores dictan las acciones a seguir. En nuestro caso, los actuadores se activan conforme a los sensores y éstos se activan guiados por las reglas dadas. 
+\end{enumerate}
+
+Estas caracteristicas fueron las que nos parecieron más pertinentes para el tipo de proyecto asignado por las siguientes razones: 
+\begin{enumerate}
+ \item Es un modelo relativamente más fácil de implementar computacionalmente haciendo uso de la programación orientada a objetos (en este caso C-Sharp. El trio actuadores-sensores-entornos se puede abstraer de una manera similar al pratrón de diseño de software modelo-vista-controlador siendo el entorno la vista; los actuadores el modelo y los sensores el controlador. Esto por supuesto es una analogía.
+ 
+ \item Con respecto al punto anterior, nos parecio más sencilla la implementación siguiendo este modelo si lo comparamos respecto a la utilización de una maquina de estados. 
+ 
+ \item Establecer de ésta manera el agente vuelve la solución al problema más mecanica y por tanto suceptible a ser resuelta de manera algoritmica.
+ 
+ \item Las herramientas teoricas con las que contamos en el curso no nos permiten llegar a la solución de maneras más sofisticadas. 
+ 
+\end{enumerate}
+ 
+
+En la siguente tabla se ven esquematizados los sensores, actuadores y el ambiente del proyecto: 
+
+\item[$\clubsuit$]Entorno de trabajo (Tabla $REAS$)
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Agente & Rendimiento & Entorno & Actuadores & Sensores \\ \hline
+Dron   &   \begin{tabular}[c]{@{}l@{}}Eficiente en tiempo \\ \\ Eficiente en ahorro de bateria \\ \\ Seguro \\ \\ Confiable\end{tabular}           &  \begin{tabular}[c]{@{}l@{}}Paredes \\ \\ Ciudad \\ \\ Bosque \\ \\ Montañas \\ \\ Clima \end{tabular}        &  \begin{tabular}[c]{@{}l@{}}h\'elices \\ \\ C\'amara \\ \\ Bater\'ia \\ \\ Motor \\ \\ Control\end{tabular} &  \begin{tabular}[c]{@{}l@{}} Radar \\ \\ Laser \\ \\ Giroscopio \\ \\ Sensor de bater\'ia \end{tabular}    \\ \hline
+\end{tabular}
+\caption{REAS}
+\label{REAS}
+\end{table}
+\newpage
+
+\item[$\clubsuit$]Propiedades del entorno (Tabla de entornos)
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+Entorno & Observable & \begin{tabular}[c]{@{}l@{}}Determinista/ \\ \\ Estocastico\end{tabular} & \begin{tabular}[c]{@{}l@{}}Episodico/ \\ \\ Secuencial\end{tabular} & \begin{tabular}[c]{@{}l@{}}Discreto/ \\ \\ Continuo\end{tabular} & \begin{tabular}[c]{@{}l@{}}Estatico/ \\ \\ Dinamico\end{tabular} & Agente     \\ \hline
+\begin{tabular}[c]{@{}l@{}}Bloques/ \\ \\ Ciudad\end{tabular} & Totalmente & Determinista                                                         & Secuencial                                                          & Continuo                                                         & Estatico                                                         & Individual \\ \hline
+\end{tabular}
+\caption{ENTORNO}
+\label{ENTORNO}
+\end{table}
+\item[$\clubsuit$]Percepciones y acciones
+
+
+
+
+
+
+\item[$\clubsuit$]Percepciones y sensores (Describir como se relacionan)
+\item[$\clubsuit$]Acciones y actuadores(Describir como se relacionan)
+\item[$\clubsuit$]Funci\'on del agente (Que chingados hace XD)
+Nuestro entorno al ser un conjunto de bloques estaticos nos pareció que una buena forma de lograr un recorrido a travéz del entorno sería aprovechar la geometría que implica su forma.
+\end{enumerate}
+\section{Conclusiones}
+\begin{enumerate}
+\item[$\clubsuit$]Ventajas y desventajas
+\end{enumerate}
+\section{Bibliografia}
 
 
 \end{document}
